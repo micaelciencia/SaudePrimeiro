@@ -1,4 +1,4 @@
-[index.html](https://github.com/user-attachments/files/27274986/index.html)[Uploading i<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-PT">
 <head>
 <meta charset="UTF-8">
@@ -22,9 +22,9 @@
     --shadow: 0 4px 24px rgba(26, 41, 66, 0.08);
     --shadow-lg: 0 12px 48px rgba(26, 41, 66, 0.15);
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     background: var(--bg);
@@ -32,13 +32,13 @@
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
-
+ 
   .container {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 24px;
   }
-
+ 
   /* ============ NAV ============ */
   nav {
     background: var(--navy);
@@ -88,7 +88,7 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--orange); }
-
+ 
   /* ============ HERO ============ */
   .hero {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
@@ -171,7 +171,7 @@
     border-color: var(--orange);
     color: var(--orange);
   }
-
+ 
   /* ============ DISCLAIMER ============ */
   .disclaimer-bar {
     background: #fff8e7;
@@ -182,7 +182,7 @@
     text-align: center;
   }
   .disclaimer-bar strong { color: #4a3c10; }
-
+ 
   /* ============ SECTION ============ */
   section.block {
     padding: 90px 0;
@@ -215,7 +215,7 @@
     font-size: 17px;
     color: var(--text-soft);
   }
-
+ 
   /* ============ PHILOSOPHY GRID ============ */
   .pillars {
     display: grid;
@@ -253,7 +253,7 @@
     color: var(--text-soft);
     font-size: 15px;
   }
-
+ 
   /* ============ QUOTE BOX ============ */
   .quote-block {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
@@ -287,7 +287,7 @@
     font-weight: 600;
     padding-left: 20px;
   }
-
+ 
   /* ============ DIET QUIZ ============ */
   .quiz-card {
     background: white;
@@ -332,7 +332,7 @@
   }
   .quiz-q.active { display: block; animation: fadeIn 0.3s ease; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-
+ 
   .quiz-q label.q-label {
     display: block;
     font-size: 14px;
@@ -396,14 +396,14 @@
     font-size: 13px;
     font-weight: 700;
   }
-
+ 
   .checkbox-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 10px;
   }
   .checkbox-grid .option { padding: 14px 16px; font-size: 14px; }
-
+ 
   .quiz-footer {
     padding: 24px 36px;
     background: var(--bg);
@@ -436,7 +436,7 @@
     opacity: 0.4;
     cursor: not-allowed;
   }
-
+ 
   /* ============ RESULT ============ */
   .result-card {
     display: none;
@@ -502,7 +502,7 @@
     font-weight: 700;
     font-size: 16px;
   }
-
+ 
   .menu-week {
     display: grid;
     gap: 10px;
@@ -526,7 +526,7 @@
     line-height: 1.7;
   }
   .menu-meals em { color: var(--orange-deep); font-style: normal; font-weight: 600; }
-
+ 
   /* ============ PATHOLOGY MATCHER ============ */
   .matcher-wrap {
     background: white;
@@ -606,7 +606,7 @@
     font-size: 12px;
     font-weight: 700;
   }
-
+ 
   .matcher-action {
     text-align: center;
     margin: 24px 0 12px;
@@ -625,7 +625,7 @@
   }
   .btn-action:hover { background: var(--orange-deep); }
   .btn-action:disabled { opacity: 0.4; cursor: not-allowed; }
-
+ 
   .recommendations {
     margin-top: 36px;
     display: none;
@@ -695,7 +695,7 @@
     color: var(--text-soft);
     font-size: 13px;
   }
-
+ 
   /* ============ TRANSITION ============ */
   .transition-grid {
     display: grid;
@@ -746,7 +746,7 @@
     color: var(--orange);
     font-weight: 700;
   }
-
+ 
   .keto-flu-box {
     background: var(--navy);
     color: white;
@@ -784,7 +784,7 @@
     color: rgba(255,255,255,0.85);
     font-size: 13px;
   }
-
+ 
   /* ============ ESTUDOS / REPOSITÓRIO ============ */
   .studies-filter {
     display: flex;
@@ -882,7 +882,7 @@
   .study-link:hover { color: var(--orange); }
   .study-link::after { content: "→"; transition: transform 0.2s; }
   .study-link:hover::after { transform: translateX(4px); }
-
+ 
   .books-row {
     margin-top: 60px;
     background: var(--navy);
@@ -924,7 +924,7 @@
     font-size: 13px;
     line-height: 1.5;
   }
-
+ 
   /* ============ MANIFESTO / FOOTER PERSONAL ============ */
   .manifesto {
     background: var(--bg);
@@ -1021,7 +1021,7 @@
   }
   .manifesto-text strong { color: var(--navy); font-weight: 700; }
   .manifesto-text em.accent { color: var(--orange-deep); font-style: normal; font-weight: 600; }
-
+ 
   /* ============ FOOTER ============ */
   footer {
     background: var(--navy-deep);
@@ -1039,7 +1039,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-
+ 
   /* ============ CHAT ASSISTENTE ============ */
   .chat-fab {
     position: fixed;
@@ -1069,7 +1069,7 @@
     0%, 100% { box-shadow: 0 8px 32px rgba(245, 166, 35, 0.45); }
     50% { box-shadow: 0 8px 32px rgba(245, 166, 35, 0.75), 0 0 0 12px rgba(245, 166, 35, 0); }
   }
-
+ 
   .chat-fab-label {
     position: absolute;
     right: 80px;
@@ -1101,7 +1101,7 @@
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
   }
-
+ 
   .chat-panel {
     position: fixed;
     bottom: 28px;
@@ -1124,7 +1124,7 @@
     from { opacity: 0; transform: translateY(20px) scale(0.95); }
     to { opacity: 1; transform: translateY(0) scale(1); }
   }
-
+ 
   .chat-header {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
     color: white;
@@ -1176,7 +1176,7 @@
     transition: background 0.2s;
   }
   .chat-close:hover { background: rgba(255,255,255,0.2); }
-
+ 
   .chat-messages {
     flex-grow: 1;
     overflow-y: auto;
@@ -1188,7 +1188,7 @@
   }
   .chat-messages::-webkit-scrollbar { width: 6px; }
   .chat-messages::-webkit-scrollbar-thumb { background: #cfd6df; border-radius: 3px; }
-
+ 
   .msg {
     display: flex;
     gap: 10px;
@@ -1196,10 +1196,10 @@
     animation: msgIn 0.25s ease;
   }
   @keyframes msgIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-
+ 
   .msg-bot { align-self: flex-start; }
   .msg-user { align-self: flex-end; flex-direction: row-reverse; }
-
+ 
   .msg-bubble {
     padding: 12px 16px;
     border-radius: 14px;
@@ -1245,7 +1245,7 @@
   }
   .msg-bubble .mini-table-row strong { color: var(--navy); }
   .msg-bubble .mini-table-row span { color: var(--orange-deep); font-weight: 600; }
-
+ 
   .chat-suggestions {
     padding: 0 20px 12px;
     display: flex;
@@ -1270,7 +1270,7 @@
     border-color: var(--orange);
     color: var(--navy);
   }
-
+ 
   .chat-input-area {
     padding: 14px 16px;
     background: white;
@@ -1309,7 +1309,7 @@
   }
   .chat-send:hover { background: var(--orange-deep); transform: scale(1.05); }
   .chat-send:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
-
+ 
   .typing {
     display: flex;
     gap: 4px;
@@ -1332,7 +1332,7 @@
     0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
     30% { opacity: 1; transform: translateY(-4px); }
   }
-
+ 
   .chat-disclaimer {
     text-align: center;
     padding: 6px 16px 10px;
@@ -1340,7 +1340,7 @@
     color: var(--text-soft);
     background: white;
   }
-
+ 
   @media (max-width: 480px) {
     .chat-panel {
       bottom: 0;
@@ -1354,7 +1354,7 @@
     }
     .chat-fab { bottom: 20px; right: 20px; width: 56px; height: 56px; font-size: 24px; }
   }
-
+ 
   /* ============ RESPONSIVE ============ */
   @media (max-width: 768px) {
     .nav-links { gap: 16px; }
@@ -1374,7 +1374,7 @@
 </style>
 </head>
 <body>
-
+ 
 <nav>
   <div class="container">
     <div class="logo">
@@ -1391,13 +1391,13 @@
     </ul>
   </div>
 </nav>
-
+ 
 <div class="disclaimer-bar">
   <div class="container">
     <strong>Aviso:</strong> Este conteúdo é educativo e não substitui aconselhamento médico. Consulte sempre o seu médico antes de iniciar qualquer dieta ou suplementação, sobretudo se tem patologias diagnosticadas ou toma medicação.
   </div>
 </div>
-
+ 
 <!-- ========== HERO ========== -->
 <section class="hero">
   <div class="container">
@@ -1417,7 +1417,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ========== FILOSOFIA ========== -->
 <section class="block alt" id="filosofia">
   <div class="container">
@@ -1431,7 +1431,7 @@
         inflamação crónica como pandemia silenciosa.
       </p>
     </div>
-
+ 
     <div class="pillars">
       <div class="pillar">
         <div class="pillar-icon">🌾</div>
@@ -1458,7 +1458,7 @@
         ativa autofagia, regula hormonas e otimiza sensibilidade à insulina.</p>
       </div>
     </div>
-
+ 
     <div class="quote-block">
       <blockquote>
         "O homem foi desenhado para comer aquilo que conseguia caçar, pescar ou colher.
@@ -1469,7 +1469,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ========== PLANEADOR ========== -->
 <section class="block" id="planeador">
   <div class="container">
@@ -1482,13 +1482,13 @@
         de menu semanal.
       </p>
     </div>
-
+ 
     <div class="quiz-card">
       <div class="quiz-header">
         <h3 id="quiz-title">Pergunta 1 de 5</h3>
         <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-bar"></div></div>
       </div>
-
+ 
       <div class="quiz-body" id="quiz-body">
         <!-- Q1 -->
         <div class="quiz-q active" data-q="1">
@@ -1517,7 +1517,7 @@
             </button>
           </div>
         </div>
-
+ 
         <!-- Q2 -->
         <div class="quiz-q" data-q="2">
           <span class="q-label">Experiência alimentar</span>
@@ -1541,7 +1541,7 @@
             </button>
           </div>
         </div>
-
+ 
         <!-- Q3 -->
         <div class="quiz-q" data-q="3">
           <span class="q-label">Atividade física</span>
@@ -1561,7 +1561,7 @@
             </button>
           </div>
         </div>
-
+ 
         <!-- Q4 -->
         <div class="quiz-q" data-q="4">
           <span class="q-label">Restrições e sensibilidades</span>
@@ -1584,7 +1584,7 @@
             </button>
           </div>
         </div>
-
+ 
         <!-- Q5 -->
         <div class="quiz-q" data-q="5">
           <span class="q-label">Estilo de vida</span>
@@ -1604,7 +1604,7 @@
             </button>
           </div>
         </div>
-
+ 
         <!-- RESULT -->
         <div class="result-card" id="result">
           <div class="result-banner">
@@ -1635,7 +1635,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="quiz-footer" id="quiz-footer">
         <button class="btn-quiz btn-quiz-prev" id="btn-prev" disabled>← Anterior</button>
         <button class="btn-quiz btn-quiz-next" id="btn-next" disabled>Seguinte →</button>
@@ -1643,7 +1643,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ========== PATOLOGIAS / SUPLEMENTOS ========== -->
 <section class="block alt" id="patologias">
   <div class="container">
@@ -1656,26 +1656,26 @@
         prescrição médica — serve como ponto de partida para uma conversa informada com o seu profissional de saúde.
       </p>
     </div>
-
+ 
     <div class="matcher-wrap">
       <div class="matcher-intro">
         <h3>O seu quadro clínico</h3>
         <p>Selecione uma ou mais patologias diagnosticadas. Pode pesquisar pelo nome.</p>
       </div>
-
+ 
       <input type="text" class="pathology-search" id="path-search" placeholder="Pesquisar patologia (ex: diabetes, tiroide, ansiedade...)">
-
+ 
       <div class="pathology-grid" id="path-grid"></div>
-
+ 
       <div class="matcher-action">
         <button class="btn-action" id="btn-recommend" disabled>Gerar recomendação personalizada</button>
       </div>
-
+ 
       <div class="recommendations" id="recommendations"></div>
     </div>
   </div>
 </section>
-
+ 
 <!-- ========== TRANSIÇÃO ========== -->
 <section class="block" id="transicao">
   <div class="container">
@@ -1687,7 +1687,7 @@
         de adaptação. Este protocolo gradual minimiza desconforto e maximiza a probabilidade de sucesso.
       </p>
     </div>
-
+ 
     <div class="transition-grid">
       <div class="week-card">
         <div class="week-header">
@@ -1704,7 +1704,7 @@
           </ul>
         </div>
       </div>
-
+ 
       <div class="week-card">
         <div class="week-header">
           <div class="week-num">Semana 2</div>
@@ -1720,7 +1720,7 @@
           </ul>
         </div>
       </div>
-
+ 
       <div class="week-card">
         <div class="week-header">
           <div class="week-num">Semana 3</div>
@@ -1736,7 +1736,7 @@
           </ul>
         </div>
       </div>
-
+ 
       <div class="week-card">
         <div class="week-header">
           <div class="week-num">Semana 4</div>
@@ -1753,7 +1753,7 @@
         </div>
       </div>
     </div>
-
+ 
     <div class="keto-flu-box">
       <div>
         <h4>"Keto flu" — o que é e como evitar</h4>
@@ -1790,7 +1790,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ========== ESTUDOS / REPOSITÓRIO ========== -->
 <section class="block alt" id="estudos">
   <div class="container">
@@ -1803,7 +1803,7 @@
         original em <em>PubMed</em> ou na revista de publicação.
       </p>
     </div>
-
+ 
     <div class="studies-filter" id="studies-filter">
       <button class="filter-pill active" data-cat="all">Todos</button>
       <button class="filter-pill" data-cat="diabetes">Diabetes &amp; Metabólico</button>
@@ -1814,9 +1814,9 @@
       <button class="filter-pill" data-cat="weight">Peso &amp; Composição</button>
       <button class="filter-pill" data-cat="historical">Históricos</button>
     </div>
-
+ 
     <div class="studies-grid" id="studies-grid"></div>
-
+ 
     <div class="books-row">
       <h3>📚 Livros de referência</h3>
       <div class="books-grid">
@@ -1854,7 +1854,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ========== MANIFESTO PESSOAL ========== -->
 <section class="manifesto" id="manifesto">
   <div class="container">
@@ -1862,7 +1862,7 @@
       <div class="section-eyebrow">Manifesto</div>
       <h2 class="section-title">Comer bem é só o princípio.</h2>
     </div>
-
+ 
     <div class="manifesto-quote">
       <blockquote>
         "Os homens que querem viver muito quase sempre vivem mal. O que importa não é viver,
@@ -1870,7 +1870,7 @@
       </blockquote>
       <cite>— Adaptado de Fernando Pessoa</cite>
     </div>
-
+ 
     <div class="manifesto-grid">
       <div class="manifesto-card">
         <div class="manifesto-avatar">MC</div>
@@ -1887,7 +1887,7 @@
           <div class="stat-label">Áreas para otimizar</div>
         </div>
       </div>
-
+ 
       <div class="manifesto-text">
         <p>
           Esta plataforma nasce de uma convicção simples: <strong>o corpo é o templo onde
@@ -1917,7 +1917,7 @@
     </div>
   </div>
 </section>
-
+ 
 <footer>
   <div class="container">
     <p>Construído com rigor por <strong>Micael Ciência</strong> · Fundamentado em literatura científica revista por pares</p>
@@ -1930,11 +1930,11 @@
     </p>
   </div>
 </footer>
-
+ 
 <!-- ========== CHAT ASSISTENTE ========== -->
 <button class="chat-fab" id="chat-fab" aria-label="Abrir assistente">💬</button>
 <span class="chat-fab-label" id="chat-fab-label">Tem dúvidas? Fale com a Raízes AI</span>
-
+ 
 <div class="chat-panel" id="chat-panel" role="dialog" aria-label="Assistente Raízes">
   <div class="chat-header">
     <div class="chat-avatar">R</div>
@@ -1944,22 +1944,22 @@
     </div>
     <button class="chat-close" id="chat-close" aria-label="Fechar">✕</button>
   </div>
-
+ 
   <div class="chat-messages" id="chat-messages"></div>
-
+ 
   <div class="chat-suggestions" id="chat-suggestions"></div>
-
+ 
   <div class="chat-input-area">
     <textarea class="chat-input" id="chat-input" rows="1"
       placeholder="Escreva uma dúvida... (ex: posso comer fruta? tenho enxaqueca)"></textarea>
     <button class="chat-send" id="chat-send" aria-label="Enviar">→</button>
   </div>
-
+ 
   <div class="chat-disclaimer">
     Respostas baseadas na base de conhecimento do site. Não substitui aconselhamento médico.
   </div>
 </div>
-
+ 
 <script>
 /* ============================================
    QUIZ DE DIETA
@@ -1969,7 +1969,7 @@ const quizState = {
   total: 5,
   answers: {}
 };
-
+ 
 const dietProfiles = {
   carnivora_terapeutica: {
     name: "Carnívora Terapêutica",
@@ -2078,7 +2078,7 @@ const dietProfiles = {
     ]
   }
 };
-
+ 
 function decideDiet() {
   const a = quizState.answers;
   const restrictions = a[4] || [];
@@ -2086,63 +2086,63 @@ function decideDiet() {
   const isStrict = a[5] === "strict";
   const isFlexible = a[5] === "flexible";
   const experienced = a[2] === "carnivore" || a[2] === "keto";
-
+ 
   // Carnívora terapêutica: autoimune + strict + experiência
   if (isAutoimmune && isStrict) return "carnivora_terapeutica";
   if (isAutoimmune && experienced) return "carnivora_keto";
-
+ 
   // Diabetes/metabólico
   if (restrictions.includes("diabetes") && isStrict) return "carnivora_keto";
   if (restrictions.includes("diabetes")) return "ketogenica";
-
+ 
   // Performance + experiência
   if (a[1] === "performance" && a[3] === "high") return "paleo";
-
+ 
   // Energia + clareza mental
   if (a[1] === "energy" && !isFlexible) return "ketogenica";
-
+ 
   // Iniciante / transição suave
   if (a[2] === "standard" && isFlexible) return "lowcarb";
   if (isFlexible) return "lowcarb";
-
+ 
   // Strict generic
   if (isStrict && experienced) return "carnivora_keto";
   if (isStrict) return "ketogenica";
-
+ 
   // Default
   if (a[1] === "longevity") return "paleo";
   if (a[1] === "weight") return "ketogenica";
-
+ 
   return "lowcarb";
 }
-
+ 
 function showResult() {
   const dietKey = decideDiet();
   const diet = dietProfiles[dietKey];
-
+ 
   document.getElementById("result-name").textContent = diet.name;
   document.getElementById("result-summary").textContent = diet.summary;
-
+ 
   const ul = document.getElementById("result-principles");
   ul.innerHTML = diet.principles.map(p => `<li>${p}</li>`).join("");
-
+ 
   const menu = document.getElementById("result-menu");
   menu.innerHTML = diet.menu.map(([day, meals]) =>
     `<div class="menu-day"><strong>${day}</strong><div class="menu-meals">${meals}</div></div>`
   ).join("");
-
+ 
   document.querySelectorAll(".quiz-q").forEach(q => q.classList.remove("active"));
   document.getElementById("result").classList.add("active");
   document.getElementById("quiz-title").textContent = "A sua recomendação";
   document.getElementById("quiz-bar").style.width = "100%";
   document.getElementById("quiz-footer").style.display = "none";
 }
-
+ 
 // Quiz interaction
 document.querySelectorAll(".quiz-q").forEach(q => {
   const qNum = parseInt(q.dataset.q);
   const isMulti = q.querySelector(".checkbox-grid") !== null;
-
+ 
   q.querySelectorAll(".option").forEach(btn => {
     btn.addEventListener("click", () => {
       if (isMulti) {
@@ -2166,7 +2166,7 @@ document.querySelectorAll(".quiz-q").forEach(q => {
     });
   });
 });
-
+ 
 document.getElementById("btn-next").addEventListener("click", () => {
   if (quizState.current === quizState.total) {
     showResult();
@@ -2179,7 +2179,7 @@ document.getElementById("btn-next").addEventListener("click", () => {
   document.getElementById("quiz-bar").style.width = (quizState.current / quizState.total * 100) + "%";
   document.getElementById("btn-prev").disabled = false;
   document.getElementById("btn-next").textContent = quizState.current === quizState.total ? "Ver recomendação →" : "Seguinte →";
-
+ 
   const currentQ = document.querySelector(`.quiz-q[data-q="${quizState.current}"]`);
   const isMulti = currentQ.querySelector(".checkbox-grid") !== null;
   if (isMulti) {
@@ -2188,7 +2188,7 @@ document.getElementById("btn-next").addEventListener("click", () => {
     document.getElementById("btn-next").disabled = !quizState.answers[quizState.current];
   }
 });
-
+ 
 document.getElementById("btn-prev").addEventListener("click", () => {
   if (quizState.current === 1) return;
   document.querySelector(`.quiz-q[data-q="${quizState.current}"]`).classList.remove("active");
@@ -2200,7 +2200,7 @@ document.getElementById("btn-prev").addEventListener("click", () => {
   document.getElementById("btn-next").textContent = "Seguinte →";
   document.getElementById("btn-next").disabled = false;
 });
-
+ 
 /* ============================================
    PATOLOGIA → SUPLEMENTOS
    ============================================ */
@@ -2414,7 +2414,7 @@ const pathologies = {
     ]
   }
 };
-
+ 
 // Render pathology grid
 const grid = document.getElementById("path-grid");
 Object.entries(pathologies).forEach(([key, data]) => {
@@ -2429,7 +2429,7 @@ Object.entries(pathologies).forEach(([key, data]) => {
   });
   grid.appendChild(btn);
 });
-
+ 
 // Search filter
 document.getElementById("path-search").addEventListener("input", (e) => {
   const term = e.target.value.toLowerCase();
@@ -2438,13 +2438,13 @@ document.getElementById("path-search").addEventListener("input", (e) => {
     chip.style.display = matches ? "" : "none";
   });
 });
-
+ 
 // Generate recommendations
 document.getElementById("btn-recommend").addEventListener("click", () => {
   const selected = Array.from(document.querySelectorAll(".pathology-chip.selected"))
     .map(c => c.dataset.key);
   const recDiv = document.getElementById("recommendations");
-
+ 
   recDiv.innerHTML = `
     <div style="background:#fff8e7; border:1px solid #f0deaa; padding:18px 22px; border-radius:10px; margin-bottom:24px; font-size:14px; color:#6b5618;">
       <strong>⚠ Importante:</strong> As doses indicadas são valores de referência da literatura científica.
@@ -2470,11 +2470,11 @@ document.getElementById("btn-recommend").addEventListener("click", () => {
       </div>
     `;
   }).join("");
-
+ 
   recDiv.classList.add("active");
   setTimeout(() => recDiv.scrollIntoView({behavior:"smooth", block:"start"}), 100);
 });
-
+ 
 /* ============================================
    REPOSITÓRIO DE ESTUDOS
    ============================================ */
@@ -2525,7 +2525,7 @@ const studies = [
     finding: "Berberina 500mg 3x/dia reduziu HbA1c, glicémia em jejum e pós-prandial de forma comparável à metformina, com adicional melhoria do perfil lipídico (TG -35%, colesterol total -29%).",
     url: "https://pubmed.ncbi.nlm.nih.gov/18397984/"
   },
-
+ 
   // ===== CARDIOVASCULAR =====
   {
     cat: "cardio",
@@ -2572,7 +2572,7 @@ const studies = [
     finding: "Restrição de hidratos melhora as 5 componentes da síndrome metabólica de forma superior a dietas low-fat — incluindo redução notável de partículas LDL pequenas e densas (aterogénicas).",
     url: "https://pubmed.ncbi.nlm.nih.gov/19082851/"
   },
-
+ 
   // ===== CÉREBRO & MENTAL =====
   {
     cat: "brain",
@@ -2610,7 +2610,7 @@ const studies = [
     finding: "Meta-análise de 26 estudos: ómega-3 com pelo menos 60% EPA mostrou efeito antidepressivo significativo, particularmente como terapia adjuvante a SSRIs.",
     url: "https://www.nature.com/articles/s41398-019-0515-5"
   },
-
+ 
   // ===== AUTOIMUNE & INFLAMAÇÃO =====
   {
     cat: "autoimmune",
@@ -2648,7 +2648,7 @@ const studies = [
     finding: "Combinação curcumina + boswélia mostrou-se mais eficaz que curcumina isolada e <strong>comparável a AINEs</strong> na redução de dor e inflamação em osteoartrite, sem efeitos gastrointestinais adversos.",
     url: "https://bmccomplementmedtherapies.biomedcentral.com/articles/10.1186/s12906-017-2062-z"
   },
-
+ 
   // ===== HORMONAL =====
   {
     cat: "hormonal",
@@ -2677,7 +2677,7 @@ const studies = [
     finding: "Meta-análise estabelece relação inversa robusta entre níveis de 25(OH)D e prevalência de DT2 e síndrome metabólica. Suplementação melhora marcadores glicémicos.",
     url: "https://academic.oup.com/jcem/article/92/6/2017/2598434"
   },
-
+ 
   // ===== PESO & COMPOSIÇÃO =====
   {
     cat: "weight",
@@ -2715,7 +2715,7 @@ const studies = [
     finding: "Inquérito a 2029 adultos em dieta carnívora &gt;6 meses: <strong>93%</strong> reportaram melhoria ou resolução de problemas digestivos; 95% reportaram melhoria de energia, sono e composição corporal. Marcadores metabólicos médios excelentes.",
     url: "https://academic.oup.com/cdn/article/5/12/nzab133/6415894"
   },
-
+ 
   // ===== HISTÓRICOS =====
   {
     cat: "historical",
@@ -2754,7 +2754,7 @@ const studies = [
     url: "https://academic.oup.com/ajcn/article-abstract/33/12/2657/4691716"
   }
 ];
-
+ 
 // Render studies
 function renderStudies(category = "all") {
   const grid = document.getElementById("studies-grid");
@@ -2770,7 +2770,7 @@ function renderStudies(category = "all") {
   `).join("");
 }
 renderStudies();
-
+ 
 // Filter pills
 document.querySelectorAll(".filter-pill").forEach(pill => {
   pill.addEventListener("click", () => {
@@ -2779,7 +2779,7 @@ document.querySelectorAll(".filter-pill").forEach(pill => {
     renderStudies(pill.dataset.cat);
   });
 });
-
+ 
 // Smooth scroll for nav
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener("click", e => {
@@ -2790,11 +2790,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
-
+ 
 /* ============================================
    ASSISTENTE CONVERSACIONAL (RAÍZES AI)
    ============================================ */
-
+ 
 // ---- Base de conhecimento de alimentos ----
 const foodDB = {
   // alimentos permitidos (carnívora/keto)
@@ -2851,7 +2851,7 @@ const foodDB = {
     leguminosas: { reason: "Antinutrientes (lectinas, fitatos). Eliminar em protocolo terapêutico." }
   }
 };
-
+ 
 // ---- Mapeamento sintoma → patologia (chaves da pathologies já existente) ----
 const symptomMap = {
   "fadiga": "fatigue", "cansaço": "fatigue", "cansada": "fatigue", "cansado": "fatigue", "sem energia": "fatigue",
@@ -2877,10 +2877,10 @@ const symptomMap = {
   "osteoporose": "osteoporosis", "osteopenia": "osteoporosis", "ossos fracos": "osteoporosis",
   "síndrome metabólica": "metabolic", "obesidade abdominal": "metabolic"
 };
-
+ 
 // ---- Conversa ----
 let chatHistory = [];
-
+ 
 const greeting = `Olá! Sou a <strong>Raízes AI</strong>, a sua assistente. Posso ajudar com:
 <ul>
   <li>🥩 Dúvidas sobre alimentos — <em>"posso comer X?"</em></li>
@@ -2889,7 +2889,7 @@ const greeting = `Olá! Sou a <strong>Raízes AI</strong>, a sua assistente. Pos
   <li>📊 Explicar princípios — <em>"o que é cetose?"</em></li>
 </ul>
 Em que lhe posso ser útil hoje?`;
-
+ 
 const defaultSuggestions = [
   "Posso comer fruta?",
   "Tenho enxaquecas",
@@ -2898,7 +2898,7 @@ const defaultSuggestions = [
   "O que comer ao pequeno-almoço?",
   "Tenho diabetes tipo 2"
 ];
-
+ 
 // ---- Lógica de interpretação ----
 function normalize(text) {
   return text.toLowerCase()
@@ -2911,7 +2911,7 @@ function normalize(text) {
     .replace(/[?!.,;:]/g, " ")
     .trim();
 }
-
+ 
 function findFood(text) {
   const t = normalize(text);
   const allFoods = { ...foodDB.allowed, ...foodDB.avoid };
@@ -2921,7 +2921,7 @@ function findFood(text) {
   }
   return null;
 }
-
+ 
 function findSymptom(text) {
   const t = normalize(text);
   const matches = [];
@@ -2934,10 +2934,10 @@ function findSymptom(text) {
   }
   return matches;
 }
-
+ 
 function detectIntent(text) {
   const t = normalize(text);
-
+ 
   // Intent: comida específica
   if (/posso comer|posso beber|come(r)? |comida|alimento|come |beber|prato|refeicao|ementa|menu|pequeno-almoco|almoco|jantar|lanche|comer/.test(t)) {
     return "food";
@@ -2945,7 +2945,7 @@ function detectIntent(text) {
   // Intent: sintomas / patologias
   const symptoms = findSymptom(text);
   if (symptoms.length > 0) return "symptom";
-
+ 
   // Intent: suplementos
   if (/suplemento|tomar|toma |comprar|magnesio|omega|vitamina|colina|berberina|coq10|q10/.test(t)) {
     return "supplement";
@@ -2958,10 +2958,10 @@ function detectIntent(text) {
   if (/exemplo|sugest|menu|plano|dia|semana/.test(t)) {
     return "menu";
   }
-
+ 
   return "general";
 }
-
+ 
 // ---- Geradores de resposta ----
 function answerFood(text) {
   const food = findFood(text);
@@ -2978,11 +2978,11 @@ function answerFood(text) {
     return `<strong>${food.charAt(0).toUpperCase() + food.slice(1)}</strong><br>❌ Não recomendado.<br><br>${info.reason}<br><br>Quer que sugira uma alternativa? Diga-me o que pretendia comer (ex: "queria algo doce" ou "queria acompanhar a carne").`;
   }
 }
-
+ 
 function answerSymptom(text) {
   const matches = findSymptom(text);
   if (matches.length === 0) return null;
-
+ 
   return matches.map(m => {
     const p = pathologies[m.path];
     if (!p) return "";
@@ -2996,7 +2996,7 @@ function answerSymptom(text) {
 <br>Veja o detalhe completo (com base científica) na secção de <a href="#patologias">Suplementos</a>. Tem mais algum sintoma para me dizer?`;
   }).join("<br><br>━━━━━━━━━━<br><br>");
 }
-
+ 
 function answerSupplement(text) {
   const t = normalize(text);
   // Match supplement name to pathologies
@@ -3012,7 +3012,7 @@ function answerSupplement(text) {
     "colina": ["nafld"],
     "k2": ["osteoporosis", "cholesterol"]
   };
-
+ 
   for (const [supp, paths] of Object.entries(supKeywords)) {
     if (t.includes(supp)) {
       const usefulFor = paths.map(p => pathologies[p]?.name).filter(Boolean);
@@ -3021,14 +3021,14 @@ function answerSupplement(text) {
 Para dosagens exatas e mecanismo de ação, indique-me a sua patologia ou consulte directamente a secção de <a href="#patologias">Suplementos</a>.`;
     }
   }
-
+ 
   // Match "para X" pattern
   const symptoms = findSymptom(text);
   if (symptoms.length > 0) return answerSymptom(text);
-
+ 
   return `Para recomendar suplementos preciso de saber qual a sua condição. Diga-me, por exemplo: "que tomar para insónia?" ou "suplementos para diabetes". Em alternativa, selecione as suas patologias na secção de <a href="#patologias">Suplementos</a>.`;
 }
-
+ 
 function answerConcept(text) {
   const t = normalize(text);
   if (t.includes("cetose")) {
@@ -3053,7 +3053,7 @@ A solução é simples: reduzir hidratos, eliminar açúcar e óleos refinados, 
   }
   return `Boa pergunta — pode reformular para que eu perceba melhor? Posso explicar conceitos como cetose, jejum intermitente, dieta carnívora, low-carb, ou resistência à insulina.`;
 }
-
+ 
 function answerMenu(text) {
   const t = normalize(text);
   if (t.includes("pequeno-almoco") || t.includes("pequeno almoco")) {
@@ -3089,7 +3089,7 @@ Ou simplesmente <em>saltar o pequeno-almoço</em> — o jejum até ao almoço é
   }
   return `Quer um plano semanal completo? Use o <a href="#planeador">Planeador</a> — em 5 perguntas devolve menu de 7 dias adaptado ao seu objetivo.`;
 }
-
+ 
 function answerGeneral(text) {
   const t = normalize(text);
   if (/oi|ola|bom dia|boa tarde|boa noite|hello/.test(t)) {
@@ -3107,7 +3107,7 @@ function answerGeneral(text) {
   <li>"Sugestões de [refeição]"</li>
 </ul>`;
 }
-
+ 
 function generateResponse(text) {
   const intent = detectIntent(text);
   switch (intent) {
@@ -3119,7 +3119,7 @@ function generateResponse(text) {
     default: return answerGeneral(text);
   }
 }
-
+ 
 // ---- UI helpers ----
 function addMessage(content, role) {
   const messages = document.getElementById("chat-messages");
@@ -3130,7 +3130,7 @@ function addMessage(content, role) {
   messages.scrollTop = messages.scrollHeight;
   chatHistory.push({ role, content });
 }
-
+ 
 function showTyping() {
   const messages = document.getElementById("chat-messages");
   const typing = document.createElement("div");
@@ -3140,11 +3140,11 @@ function showTyping() {
   messages.appendChild(typing);
   messages.scrollTop = messages.scrollHeight;
 }
-
+ 
 function hideTyping() {
   document.getElementById("typing-indicator")?.remove();
 }
-
+ 
 function renderSuggestions(arr) {
   const container = document.getElementById("chat-suggestions");
   container.innerHTML = arr.map(s => `<button class="suggestion-chip">${s}</button>`).join("");
@@ -3154,7 +3154,7 @@ function renderSuggestions(arr) {
     });
   });
 }
-
+ 
 function generateContextSuggestions(lastResponse) {
   const r = lastResponse.toLowerCase();
   if (r.includes("patologia") || r.includes("dieta sugerida")) {
@@ -3168,7 +3168,7 @@ function generateContextSuggestions(lastResponse) {
   }
   return defaultSuggestions.slice(0, 4);
 }
-
+ 
 function sendMessage(text) {
   if (!text.trim()) return;
   addMessage(escapeHtml(text), "user");
@@ -3182,11 +3182,11 @@ function sendMessage(text) {
     renderSuggestions(generateContextSuggestions(response));
   }, delay);
 }
-
+ 
 function escapeHtml(s) {
   return s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
-
+ 
 // ---- Init chat ----
 document.getElementById("chat-fab").addEventListener("click", () => {
   document.getElementById("chat-panel").classList.add("open");
@@ -3216,7 +3216,9 @@ document.getElementById("chat-input").addEventListener("input", e => {
   e.target.style.height = Math.min(e.target.scrollHeight, 100) + "px";
 });
 </script>
-
+ 
 </body>
 </html>
-ndex.html…]()
+ 
+
+
