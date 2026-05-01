@@ -1453,9 +1453,10 @@
       </div>
       <div class="pillar">
         <div class="pillar-icon">⚖️</div>
-        <h3>Jejum intermitente e ritmos</h3>
-        <p>Comer menos vezes, mas melhor. Permitir ao corpo períodos de descanso digestivo
-        ativa autofagia, regula hormonas e otimiza sensibilidade à insulina.</p>
+        <h3>1-2 refeições/dia. Zero lanches.</h3>
+        <p>A frequência alimentar é tão importante como o conteúdo. <strong>Mais de 3 refeições</strong>
+        mantém insulina cronicamente alta. Janela de 6-8h, jejum de 16-18h: ativa autofagia,
+        regula grelina/leptina e restaura sensibilidade à insulina.</p>
       </div>
     </div>
  
@@ -1973,49 +1974,51 @@ const quizState = {
 const dietProfiles = {
   carnivora_terapeutica: {
     name: "Carnívora Terapêutica",
-    summary: "Protocolo de eliminação total — apenas produtos animais. Indicada para reverter quadros autoimunes, inflamatórios e metabólicos resistentes.",
+    summary: "Protocolo de eliminação total — apenas produtos animais. Indicada para reverter quadros autoimunes, inflamatórios e metabólicos resistentes. Padrão: 1-2 refeições/dia.",
     principles: [
       "Apenas carne (preferencialmente ruminantes), peixe, ovos, vísceras",
       "Sal de qualidade e água — nada mais nas primeiras 4-8 semanas",
+      "<strong>Máximo 2 refeições por dia</strong> — saciedade da gordura permite naturalmente saltar pequeno-almoço",
       "Sem lácteos no protocolo inicial (reintroduzir depois se tolerar)",
       "Cortar todos os vegetais, frutas, frutos secos e temperos durante a fase de eliminação",
       "Reintroduzir alimentos um a um após estabilização para identificar gatilhos",
-      "Hidratar com caldo de osso diariamente"
+      "Hidratar com caldo de osso e jejuar até sentir fome real"
     ],
     menu: [
-      ["Segunda", "<em>Pequeno-almoço:</em> Ovos com bacon e manteiga<br><em>Almoço:</em> Bife do lombo grelhado, sal grosso<br><em>Jantar:</em> Salmão selvagem em manteiga"],
-      ["Terça", "<em>Pequeno-almoço:</em> Jejum (água + sal) ou ovos<br><em>Almoço:</em> Costeletas de borrego<br><em>Jantar:</em> Hambúrguer de vaca caseiro com gema"],
-      ["Quarta", "<em>Pequeno-almoço:</em> Ovos mexidos em banha<br><em>Almoço:</em> Fígado de vitela salteado<br><em>Jantar:</em> Sardinhas grelhadas"],
-      ["Quinta", "<em>Pequeno-almoço:</em> Caldo de osso<br><em>Almoço:</em> Peito de pato<br><em>Jantar:</em> Costela de vaca lentamente assada"],
-      ["Sexta", "<em>Pequeno-almoço:</em> 3 ovos cozidos<br><em>Almoço:</em> Bacalhau fresco com manteiga<br><em>Jantar:</em> Picanha grelhada com sal"],
-      ["Sábado", "<em>Pequeno-almoço:</em> Omelete com queijo curado (se tolera)<br><em>Almoço:</em> Coelho estufado<br><em>Jantar:</em> Atum em azeite"],
-      ["Domingo", "<em>Pequeno-almoço:</em> Jejum até ao almoço<br><em>Almoço:</em> Cozido familiar (carnes diversas)<br><em>Jantar:</em> Ovos com chouriço de qualidade"]
+      ["Segunda", "<em>Jejum:</em> água + sal + caldo de osso<br><em>Almoço (13h):</em> Bife do lombo grelhado, sal grosso<br><em>Jantar (19h):</em> Salmão selvagem em manteiga"],
+      ["Terça", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Costeletas de borrego com gordura<br><em>Jantar:</em> Hambúrguer de vaca caseiro com gema crua"],
+      ["Quarta · OMAD", "<em>Jejum 23h</em><br><em>Refeição única (18h):</em> Costela de vaca assada lentamente + 3 ovos cozidos + caldo de osso"],
+      ["Quinta", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Fígado de vitela salteado em manteiga (vísceras 1-2x/semana)<br><em>Jantar:</em> Sardinhas grelhadas com sal"],
+      ["Sexta", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Bacalhau fresco em manteiga abundante<br><em>Jantar:</em> Picanha grelhada com sal grosso"],
+      ["Sábado", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Coelho estufado<br><em>Jantar:</em> Atum em azeite + ovos cozidos"],
+      ["Domingo · OMAD", "<em>Jejum 24h</em><br><em>Refeição única (14h):</em> Cozido familiar de carnes diversas + caldo de osso"]
     ]
   },
   carnivora_keto: {
     name: "Carnívora-Cetogénica",
-    summary: "Base animal predominante com pequenas quantidades de vegetais de baixo IG. Excelente equilíbrio entre eficácia terapêutica e flexibilidade.",
+    summary: "Base animal predominante com pequenas quantidades de vegetais de baixo IG. Excelente equilíbrio entre eficácia terapêutica e flexibilidade. Padrão: 2 refeições/dia.",
     principles: [
       "70-80% das calorias de produtos animais (carne, peixe, ovos, lácteos integrais)",
       "20-30% de gorduras saudáveis: azeite, abacate, frutos secos",
       "Vegetais permitidos: folhas verdes, brócolos, couve-flor, courgette, espargos",
       "Zero açúcar, cereais, leguminosas, óleos vegetais industriais",
-      "Janela alimentar de 6-8 horas (jejum 16-18h)",
+      "<strong>2 refeições por dia</strong> dentro de janela alimentar de 6-8 horas (jejum 16-18h)",
+      "Sem lanches entre refeições — qualquer ingestão calórica quebra o jejum metabólico",
       "Hidratos &lt; 30g por dia"
     ],
     menu: [
-      ["Segunda", "<em>Almoço:</em> Bife com manteiga + salada de espinafres em azeite<br><em>Jantar:</em> Salmão grelhado + brócolos salteados"],
-      ["Terça", "<em>Almoço:</em> Omelete de 3 ovos com queijo + abacate<br><em>Jantar:</em> Frango assado com pele + couve-flor"],
-      ["Quarta", "<em>Almoço:</em> Salada de atum (azeite, ovo cozido, alface)<br><em>Jantar:</em> Costeletas de borrego + courgette grelhada"],
-      ["Quinta", "<em>Almoço:</em> Hambúrguer caseiro sem pão com queijo + bacon<br><em>Jantar:</em> Sardinhas + tomate cherry + azeite"],
-      ["Sexta", "<em>Almoço:</em> Bacalhau com natas (sem batata)<br><em>Jantar:</em> Picanha + salada verde"],
-      ["Sábado", "<em>Almoço:</em> Polvo com azeite + salada<br><em>Jantar:</em> Entrecôte + espargos com manteiga"],
-      ["Domingo", "<em>Almoço:</em> Cozido tradicional (sem batata e arroz)<br><em>Jantar:</em> Ovos mexidos + queijo curado + presunto"]
+      ["Segunda", "<em>Jejum até às 13h</em> (água, café, chá)<br><em>Almoço:</em> Bife com manteiga + salada de espinafres em azeite<br><em>Jantar (19h):</em> Salmão grelhado + brócolos salteados"],
+      ["Terça", "<em>Jejum até às 13h</em><br><em>Almoço:</em> Omelete de 3 ovos com queijo + abacate<br><em>Jantar:</em> Frango assado com pele + couve-flor"],
+      ["Quarta", "<em>Jejum até às 13h</em><br><em>Almoço:</em> Salada de atum (azeite, ovo cozido, alface)<br><em>Jantar:</em> Costeletas de borrego + courgette grelhada"],
+      ["Quinta · OMAD", "<em>Jejum 22h</em><br><em>Refeição única (18h):</em> Hambúrguer caseiro sem pão com queijo + bacon + salada generosa"],
+      ["Sexta", "<em>Jejum até às 13h</em><br><em>Almoço:</em> Bacalhau com natas (sem batata)<br><em>Jantar:</em> Picanha + salada verde"],
+      ["Sábado", "<em>Jejum até às 13h</em><br><em>Almoço:</em> Polvo com azeite + salada<br><em>Jantar:</em> Entrecôte + espargos com manteiga"],
+      ["Domingo", "<em>Jejum até ao almoço familiar</em><br><em>Almoço:</em> Cozido tradicional (sem batata e arroz)<br><em>Jantar:</em> Tábua de queijos curados + presunto"]
     ]
   },
   ketogenica: {
     name: "Cetogénica Clássica",
-    summary: "Dieta cetogénica equilibrada com variedade de origens. Ideal para perda de peso, controlo metabólico e ganho de energia constante.",
+    summary: "Dieta cetogénica equilibrada com variedade de origens. Ideal para perda de peso, controlo metabólico e ganho de energia constante. Padrão: 2 refeições/dia.",
     principles: [
       "Macros aproximados: 70% gordura · 25% proteína · 5% hidratos",
       "Hidratos: máximo 30-50g líquidos por dia",
@@ -2023,58 +2026,61 @@ const dietProfiles = {
       "Proteínas variadas: carne, peixe, ovos, lácteos integrais",
       "Vegetais sem amido à vontade",
       "Frutos vermelhos com moderação (½ chávena/dia)",
-      "Jejum intermitente 14-16h opcional mas recomendado"
+      "<strong>Máximo 3 refeições/dia, idealmente 2</strong> — janela alimentar de 6-8 horas",
+      "Sem lanches — café puro, chá, água ou caldo de osso entre refeições"
     ],
     menu: [
-      ["Segunda", "<em>Pequeno-almoço:</em> Café bulletproof + 2 ovos<br><em>Almoço:</em> Salada César com frango (sem croutons)<br><em>Jantar:</em> Salmão em manteiga + brócolos"],
-      ["Terça", "<em>Pequeno-almoço:</em> Iogurte grego integral + nozes<br><em>Almoço:</em> Bife + salada com abacate<br><em>Jantar:</em> Curgete recheada com carne picada"],
-      ["Quarta", "<em>Pequeno-almoço:</em> Omelete com cogumelos e queijo<br><em>Almoço:</em> Sopa de couve-flor + frango<br><em>Jantar:</em> Bacalhau com grão (substituir grão por brócolos)"],
-      ["Quinta", "<em>Pequeno-almoço:</em> Jejum<br><em>Almoço:</em> Hambúrguer keto (sem pão) + salada<br><em>Jantar:</em> Sardinhas grelhadas + pimentos assados"],
-      ["Sexta", "<em>Pequeno-almoço:</em> 2 ovos + abacate + tomate<br><em>Almoço:</em> Atum + ovo + alface<br><em>Jantar:</em> Frango com pele + espinafres salteados"],
-      ["Sábado", "<em>Pequeno-almoço:</em> Panquecas de ovo e queijo<br><em>Almoço:</em> Polvo grelhado + salada<br><em>Jantar:</em> Entrecôte + cogumelos em manteiga"],
-      ["Domingo", "<em>Pequeno-almoço:</em> Bowl de iogurte + frutos vermelhos + sementes<br><em>Almoço:</em> Borrego assado + couve-flor gratinada<br><em>Jantar:</em> Tábua de queijos e charcutaria"]
+      ["Segunda", "<em>Jejum até às 12h</em> (café preto ou bulletproof permitidos)<br><em>Almoço:</em> Salada César com frango (sem croutons)<br><em>Jantar:</em> Salmão em manteiga + brócolos"],
+      ["Terça", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Bife + salada com abacate<br><em>Jantar:</em> Courgette recheada com carne picada"],
+      ["Quarta", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Sopa de couve-flor + frango<br><em>Jantar:</em> Bacalhau com brócolos em manteiga"],
+      ["Quinta · OMAD", "<em>Jejum 22-24h</em><br><em>Refeição única (18h):</em> Hambúrguer keto (sem pão) + salada generosa + abacate"],
+      ["Sexta", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Atum + ovo + alface + azeite<br><em>Jantar:</em> Frango com pele + espinafres salteados"],
+      ["Sábado", "<em>Pequeno-almoço (10h):</em> Omelete com cogumelos e queijo<br><em>Jantar (18h):</em> Entrecôte + cogumelos em manteiga"],
+      ["Domingo", "<em>Brunch (11h):</em> Iogurte grego + frutos vermelhos + sementes + 2 ovos<br><em>Jantar (18h):</em> Borrego assado + couve-flor gratinada"]
     ]
   },
   lowcarb: {
     name: "Low-Carb Sustentável",
-    summary: "Restrição moderada de hidratos com flexibilidade social. Ponto de partida ideal e protocolo manutenção a longo prazo.",
+    summary: "Restrição moderada de hidratos com flexibilidade social. Ponto de partida ideal e protocolo de manutenção a longo prazo. Padrão: 2-3 refeições/dia.",
     principles: [
       "Hidratos: 50-100g por dia (privilegiar vegetais e alguma fruta de baixo IG)",
       "Eliminar: açúcar refinado, farinhas brancas, refrigerantes, ultraprocessados",
       "Privilegiar: proteína animal de qualidade, gorduras naturais, vegetais variados",
       "Permitido: bagas (mirtilo, framboesa), maçã, pera com moderação",
-      "Sem necessidade de jejum forçado — comer quando tem fome",
+      "<strong>Máximo 3 refeições/dia, sem lanches</strong> — qualquer ingestão calórica entre refeições dispara insulina",
+      "Janela alimentar de 8-10h (jejum mínimo de 14h)",
       "Manter sempre prioridade da proteína em cada refeição"
     ],
     menu: [
-      ["Segunda", "<em>Pequeno-almoço:</em> Ovos + iogurte grego + frutos vermelhos<br><em>Almoço:</em> Frango grelhado + legumes assados<br><em>Jantar:</em> Salmão + salada mista"],
-      ["Terça", "<em>Pequeno-almoço:</em> Smoothie de proteína + abacate<br><em>Almoço:</em> Bife + brócolos + ½ chávena de quinoa<br><em>Jantar:</em> Sopa de legumes + omelete"],
-      ["Quarta", "<em>Pequeno-almoço:</em> Iogurte + nozes + 1 maçã<br><em>Almoço:</em> Salada de atum com ovo<br><em>Jantar:</em> Frango com cogumelos + courgette"],
-      ["Quinta", "<em>Pequeno-almoço:</em> Ovos mexidos + abacate<br><em>Almoço:</em> Sardinhas + salada de tomate<br><em>Jantar:</em> Borrego com legumes assados"],
-      ["Sexta", "<em>Pequeno-almoço:</em> Iogurte grego + sementes<br><em>Almoço:</em> Hambúrguer (sem pão) + salada<br><em>Jantar:</em> Bacalhau com legumes"],
-      ["Sábado", "<em>Pequeno-almoço:</em> Brunch: ovos + bacon + tomate + abacate<br><em>Almoço:</em> Refeição livre (de preferência peixe ou carne grelhada)<br><em>Jantar:</em> Sopa rica + queijo"],
-      ["Domingo", "<em>Pequeno-almoço:</em> Panquecas de aveia (½ porção) + ovos<br><em>Almoço:</em> Almoço familiar — focar em proteína e legumes<br><em>Jantar:</em> Tábua de frios + salada"]
+      ["Segunda", "<em>Pequeno-almoço (9h):</em> 3 ovos + abacate<br><em>Almoço:</em> Frango grelhado + legumes assados<br><em>Jantar (19h):</em> Salmão + salada mista"],
+      ["Terça", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Bife + brócolos + ½ chávena de quinoa<br><em>Jantar:</em> Sopa de legumes + omelete"],
+      ["Quarta", "<em>Pequeno-almoço:</em> Iogurte grego integral + nozes + 1 maçã<br><em>Almoço:</em> Salada de atum com ovo<br><em>Jantar:</em> Frango com cogumelos + courgette"],
+      ["Quinta", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Sardinhas + salada de tomate + azeite<br><em>Jantar:</em> Borrego com legumes assados"],
+      ["Sexta", "<em>Pequeno-almoço:</em> Ovos mexidos + abacate<br><em>Almoço:</em> Hambúrguer (sem pão) + salada<br><em>Jantar:</em> Bacalhau com legumes"],
+      ["Sábado", "<em>Brunch (11h):</em> Ovos + bacon + tomate + abacate<br><em>Jantar (19h):</em> Sopa rica + queijo curado"],
+      ["Domingo", "<em>Jejum até ao almoço familiar</em><br><em>Almoço:</em> Almoço familiar — proteína e legumes<br><em>Jantar:</em> Tábua de frios + salada"]
     ]
   },
   paleo: {
     name: "Paleolítica",
-    summary: "Alimentação baseada no que conseguíamos caçar, pescar ou colher. Sem cereais, leguminosas ou lácteos, mas com hidratos de raízes e fruta.",
+    summary: "Alimentação baseada no que conseguíamos caçar, pescar ou colher. Sem cereais, leguminosas ou lácteos, mas com hidratos de raízes e fruta. Padrão: 2-3 refeições/dia.",
     principles: [
       "Sim: carne, peixe, ovos, vegetais, frutas, frutos secos, sementes, raízes (batata-doce, mandioca)",
       "Não: cereais, leguminosas, lácteos, açúcar refinado, óleos vegetais industriais",
       "Gorduras: azeite, abacate, coco, manteiga clarificada (ghee), banha",
       "Mais permissiva em hidratos do que keto — boa para atletas",
       "Foco em qualidade: orgânico, pasto, selvagem quando possível",
-      "Hidratos a girar em torno do treino"
+      "<strong>2-3 refeições/dia, zero lanches</strong> — picar entre refeições foi invenção moderna",
+      "Hidratos a girar em torno do treino (peri-workout)"
     ],
     menu: [
-      ["Segunda", "<em>Pequeno-almoço:</em> Ovos + abacate + frutos vermelhos<br><em>Almoço:</em> Frango + batata-doce assada + brócolos<br><em>Jantar:</em> Salmão + espargos"],
-      ["Terça", "<em>Pequeno-almoço:</em> Smoothie verde + frutos secos<br><em>Almoço:</em> Bife + salada + ½ batata-doce<br><em>Jantar:</em> Sopa de cenoura + frango assado"],
+      ["Segunda", "<em>Pequeno-almoço (8h):</em> Ovos + abacate + frutos vermelhos<br><em>Almoço:</em> Frango + batata-doce assada + brócolos<br><em>Jantar (19h):</em> Salmão + espargos"],
+      ["Terça", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Bife + salada + ½ batata-doce<br><em>Jantar:</em> Sopa de cenoura + frango assado"],
       ["Quarta", "<em>Pequeno-almoço:</em> Omelete com legumes<br><em>Almoço:</em> Salada de atum com azeite e abacate<br><em>Jantar:</em> Costeletas de borrego + couve-flor"],
-      ["Quinta", "<em>Pequeno-almoço:</em> Banana + amêndoas + 2 ovos<br><em>Almoço:</em> Hambúrguer (sem pão) + batata-doce frita em azeite<br><em>Jantar:</em> Sardinhas + tomate"],
-      ["Sexta", "<em>Pequeno-almoço:</em> Bowl de frutos vermelhos + sementes<br><em>Almoço:</em> Frango com legumes salteados<br><em>Jantar:</em> Polvo + salada"],
-      ["Sábado", "<em>Pequeno-almoço:</em> Ovos + bacon + cogumelos<br><em>Almoço:</em> Carne assada + raízes assadas<br><em>Jantar:</em> Peixe com legumes ao vapor"],
-      ["Domingo", "<em>Pequeno-almoço:</em> Panquecas de banana e ovo<br><em>Almoço:</em> Cozido (sem grão e arroz) + couves<br><em>Jantar:</em> Salada completa + ovo cozido"]
+      ["Quinta", "<em>Jejum até ao almoço</em><br><em>Almoço:</em> Hambúrguer (sem pão) + batata-doce frita em azeite<br><em>Jantar:</em> Sardinhas + tomate"],
+      ["Sexta · Treino", "<em>Pequeno-almoço:</em> Bowl de frutos vermelhos + sementes + 2 ovos<br><em>Almoço pós-treino:</em> Frango com batata-doce + legumes salteados<br><em>Jantar:</em> Polvo + salada"],
+      ["Sábado", "<em>Brunch (11h):</em> Ovos + bacon + cogumelos + abacate<br><em>Jantar (19h):</em> Carne assada + raízes assadas + couves"],
+      ["Domingo", "<em>Jejum até ao almoço familiar</em><br><em>Almoço:</em> Cozido (sem grão e arroz) + couves<br><em>Jantar:</em> Salada completa + ovo cozido"]
     ]
   }
 };
@@ -2810,6 +2816,7 @@ const foodDB = {
     sardinhas: { tier: "S", note: "Provavelmente o alimento mais nutritivo do mundo. Coma em lata ou grelhadas." },
     bacalhau: { tier: "A", note: "Ótimo. Acompanhe com manteiga ou azeite — é peixe magro." },
     atum: { tier: "A", note: "Ok com moderação (mercúrio). Em azeite é melhor que em água." },
+    figado: { tier: "S", note: "Multivitamínico da natureza. 100g de fígado de vaca = doses excecionais de B12, vit. A, ferro, cobre. 1x/semana." },
     ovos: { tier: "S", note: "Alimento perfeito. 3-6 por dia sem problema. Privilegie galinhas do campo." },
     ovo: { tier: "S", note: "Alimento perfeito. 3-6 por dia sem problema. Privilegie galinhas do campo." },
     manteiga: { tier: "S", note: "Sim — preferencialmente de pasto. Rica em vitamina K2 e butirato." },
@@ -2819,9 +2826,9 @@ const foodDB = {
     abacate: { tier: "S", note: "Sim, ilimitado. Gordura monoinsaturada, potássio, fibra." },
     queijo: { tier: "A", note: "Ok se tolera lácteos. Privilegie curados (parmesão, gruyère). Evite processados." },
     iogurte: { tier: "A", note: "Apenas integral, natural, sem açúcar. Grego é excelente. Evite 'light' e com fruta." },
-    nozes: { tier: "B", note: "Com moderação — densas em calorias. Macadâmia, nozes e amêndoas são as melhores." },
+    nozes: { tier: "B", note: "Com moderação — densas em calorias e ricas em ómega-6. Macadâmia, nozes e amêndoas são as melhores." },
     brocolos: { tier: "A", note: "Sim. Excelente fonte de sulforafano. Salteados em manteiga." },
-    espinafres: { tier: "A", note: "Sim. Cozinhados são melhor digeridos que crus." },
+    espinafres: { tier: "A", note: "Sim. Cozinhados são melhor digeridos que crus (oxalatos)." },
     couveflor: { tier: "A", note: "Versátil — pode substituir arroz e puré de batata." },
     courgette: { tier: "A", note: "Excelente. Pode fazer 'esparguete' de courgette." },
     pepino: { tier: "A", note: "Sim, baixíssimo em hidratos." },
@@ -2829,26 +2836,42 @@ const foodDB = {
     cogumelos: { tier: "A", note: "Sim. Saltear em manteiga ou azeite." },
     tomate: { tier: "B", note: "Ok com moderação. É fruto, tem alguma frutose." },
     cebola: { tier: "B", note: "Pequenas quantidades como tempero. Tem hidratos." },
-    alho: { tier: "A", note: "Sim, como tempero. Anti-inflamatório natural." }
+    alho: { tier: "A", note: "Sim, como tempero. Anti-inflamatório natural." },
+    cafe: { tier: "S", note: "Excelente em jejum. Acelera autofagia, melhora foco. Sem açúcar nem leite. Manteiga/MCT permitidos." },
+    café: { tier: "S", note: "Excelente em jejum. Acelera autofagia, melhora foco. Sem açúcar nem leite. Manteiga/MCT permitidos." },
+    cha: { tier: "S", note: "Verde, preto, ervas — todos ok. Sem açúcar. Quebra fome durante o jejum." },
+    chá: { tier: "S", note: "Verde, preto, ervas — todos ok. Sem açúcar. Quebra fome durante o jejum." },
+    agua: { tier: "S", note: "2-3L/dia. Adicione sal de qualidade especialmente em cetose." },
+    água: { tier: "S", note: "2-3L/dia. Adicione sal de qualidade especialmente em cetose." },
+    "frutos vermelhos": { tier: "B", note: "A única fruta verdadeiramente keto-friendly. Mirtilo, framboesa, amora — meia chávena/dia." },
+    mirtilo: { tier: "B", note: "Baixíssimo em frutose, alto em antioxidantes. Meia chávena/dia ok." },
+    framboesa: { tier: "B", note: "Excelente — fibra alta, frutose baixa." }
   },
   // alimentos a evitar
   avoid: {
-    pao: { reason: "Trigo refinado, alto IG, aumenta inflamação intestinal e glicémia." },
+    pao: { reason: "Trigo refinado, alto IG, aumenta inflamação intestinal e glicémia. <em>O glúten moderno é diferente do que comíamos há 50 anos</em> (hibridização da Revolução Verde)." },
     pão: { reason: "Trigo refinado, alto IG, aumenta inflamação intestinal e glicémia." },
     massa: { reason: "Hidrato refinado, sem valor nutricional, dispara insulina." },
-    arroz: { reason: "Hidrato puro. Se mesmo necessário, prefira basmati ou jasmim em pouca quantidade." },
+    arroz: { reason: "Hidrato puro. Se mesmo necessário, prefira basmati ou jasmim em pouca quantidade peri-treino." },
     batata: { reason: "Amido elevado. Substitua por couve-flor ou nabo." },
-    açucar: { reason: "Veneno metabólico. Sem exceções." },
+    açucar: { reason: "Veneno metabólico. Sem exceções. Causa raiz de praticamente todas as doenças metabólicas modernas." },
     açúcar: { reason: "Veneno metabólico. Sem exceções." },
     bolo: { reason: "Combinação tóxica de açúcar + farinha + óleos vegetais." },
     bolacha: { reason: "Ultra-processado. Açúcar, farinha, óleos refinados." },
-    refrigerante: { reason: "Açúcar líquido. Pior ainda nos 'zero' (adoçantes desregulam apetite)." },
-    sumo: { reason: "Mesmo natural — concentra frutose sem a fibra. Beba a fruta inteira." },
+    refrigerante: { reason: "Açúcar líquido. Pior ainda nos 'zero' (adoçantes desregulam apetite e microbiota — Suez et al., Nature 2014)." },
+    sumo: { reason: "Mesmo natural — concentra frutose sem a fibra. Beba a fruta inteira (com moderação)." },
     cereais: { reason: "Pequeno-almoço dos cereais é um truque de marketing. Açúcar + grãos refinados." },
     margarina: { reason: "Óleos vegetais hidrogenados. Pior do que a manteiga em todos os parâmetros." },
     girassol: { reason: "Óleo de girassol é alto em ómega-6 inflamatório. Substitua por azeite ou manteiga." },
     soja: { reason: "Disruptor endócrino. Evitar especialmente em homens e crianças." },
-    leguminosas: { reason: "Antinutrientes (lectinas, fitatos). Eliminar em protocolo terapêutico." }
+    leguminosas: { reason: "Antinutrientes (lectinas, fitatos). Eliminar em protocolo terapêutico." },
+    fruta: { reason: "Frutas modernas (selecionadas para alta frutose) não são equivalentes às ancestrais. Frutose vai direto ao fígado e contribui para esteatose. Limite a frutos vermelhos." },
+    banana: { reason: "Alto em frutose (14g por banana média). Evitar em keto. Ocasional para atletas peri-treino." },
+    laranja: { reason: "Maioritariamente água com açúcar. 1 laranja = ~12g de frutose." },
+    cerveja: { reason: "Hidratos (~13g/lata) + glúten + álcool. Pior das hipóteses alcoólicas." },
+    vinho: { reason: "Tinto seco com moderação (1 cálice). Resveratrol presente mas em quantidades pequenas — não é a razão para beber." },
+    alcool: { reason: "Não é metabolicamente neutro. Para o corpo, é a primeira coisa a metabolizar (bloqueia queima de gordura). Evitar em fase de perda de peso." },
+    chocolate: { reason: "Apenas chocolate negro &gt;85% cacau, 1-2 quadrados. Evite chocolates de leite." }
   }
 };
  
@@ -2884,6 +2907,7 @@ let chatHistory = [];
 const greeting = `Olá! Sou a <strong>Raízes AI</strong>, a sua assistente. Posso ajudar com:
 <ul>
   <li>🥩 Dúvidas sobre alimentos — <em>"posso comer X?"</em></li>
+  <li>⏱ Jejum e frequência alimentar — <em>"quantas refeições devo fazer?"</em></li>
   <li>🩺 Sintomas e patologias — <em>"tenho enxaquecas"</em></li>
   <li>🧬 Recomendar suplementação — <em>"que tomar para ansiedade?"</em></li>
   <li>📊 Explicar princípios — <em>"o que é cetose?"</em></li>
@@ -2891,11 +2915,11 @@ const greeting = `Olá! Sou a <strong>Raízes AI</strong>, a sua assistente. Pos
 Em que lhe posso ser útil hoje?`;
  
 const defaultSuggestions = [
+  "Quantas refeições devo fazer?",
   "Posso comer fruta?",
   "Tenho enxaquecas",
   "O que é cetose?",
-  "Suplementos para ansiedade",
-  "O que comer ao pequeno-almoço?",
+  "Posso saltar o pequeno-almoço?",
   "Tenho diabetes tipo 2"
 ];
  
@@ -2938,8 +2962,16 @@ function findSymptom(text) {
 function detectIntent(text) {
   const t = normalize(text);
  
+  // Intent: jejum / quantas refeições (alta prioridade)
+  if (/jejum|jejuar|quantas refeicoes|quantas vezes|salto o pequeno|saltar pequeno|saltar refeicao|comer .* vezes|3 refeicoes|refeicoes por dia|omad|janela alimentar|16:8|18:6|20:4/.test(t)) {
+    return "fasting";
+  }
   // Intent: comida específica
   if (/posso comer|posso beber|come(r)? |comida|alimento|come |beber|prato|refeicao|ementa|menu|pequeno-almoco|almoco|jantar|lanche|comer/.test(t)) {
+    // Distinguir pergunta sobre refeição específica (menu) de alimento concreto (food)
+    const food = findFood(text);
+    if (food) return "food";
+    if (/pequeno-almoco|almoco|jantar|menu|exemplo|sugest|plano/.test(t)) return "menu";
     return "food";
   }
   // Intent: sintomas / patologias
@@ -2947,11 +2979,11 @@ function detectIntent(text) {
   if (symptoms.length > 0) return "symptom";
  
   // Intent: suplementos
-  if (/suplemento|tomar|toma |comprar|magnesio|omega|vitamina|colina|berberina|coq10|q10/.test(t)) {
+  if (/suplemento|tomar|toma |comprar|magnesio|omega|vitamina|colina|berberina|coq10|q10|selenio|inositol|curcumina/.test(t)) {
     return "supplement";
   }
   // Intent: conceitos
-  if (/o que e|porque |porque|como funciona|cetose|jejum|low.?carb|carnivora|keto|paleo|inflamacao|insulina/.test(t)) {
+  if (/o que e|porque |porque|como funciona|cetose|low.?carb|carnivora|keto|paleo|inflamacao|insulina|autofagia|cetonas|cetonicos/.test(t)) {
     return "concept";
   }
   // Intent: exemplo de menu
@@ -3057,37 +3089,90 @@ A solução é simples: reduzir hidratos, eliminar açúcar e óleos refinados, 
 function answerMenu(text) {
   const t = normalize(text);
   if (t.includes("pequeno-almoco") || t.includes("pequeno almoco")) {
-    return `Sugestões de <strong>pequeno-almoço</strong> low-carb/keto:
+    return `<strong>A melhor opção é não tomar.</strong> A evidência atual (Sievert et al., BMJ 2019) desmonta o mito do "pequeno-almoço como refeição mais importante" — pessoas que saltam o pequeno-almoço tendem a ingerir menos calorias totais e a manter melhor peso.<br><br>
+Saltar o pequeno-almoço prolonga o jejum noturno (16-18h), mantendo o corpo a queimar gordura e em autofagia.<br><br>
+<em>Permitido em jejum:</em> água com sal, café preto, chá, café bulletproof (café + manteiga + MCT) — não interrompem cetose.<br><br>
+<em>Se mesmo precisa de comer:</em>
 <ul>
-  <li>2-3 ovos mexidos em manteiga + bacon + abacate</li>
+  <li>2-3 ovos em manteiga + abacate</li>
   <li>Omelete com queijo curado e cogumelos</li>
-  <li>Iogurte grego integral + frutos vermelhos + nozes</li>
-  <li>Café bulletproof (café + manteiga + óleo MCT) — ideal para jejum prolongado</li>
-  <li>Salmão fumado + ovo cozido + abacate</li>
-</ul>
-Ou simplesmente <em>saltar o pequeno-almoço</em> — o jejum até ao almoço é uma das ferramentas mais poderosas.`;
+  <li>Iogurte grego integral (sem açúcar) + frutos vermelhos</li>
+</ul>`;
   }
   if (t.includes("almoco")) {
-    return `Sugestões de <strong>almoço</strong>:
+    return `Sugestões de <strong>almoço</strong> (ideal: 12h-13h, primeira refeição do dia):
 <ul>
   <li>Bife grelhado + salada de espinafres com azeite e abacate</li>
   <li>Salmão em manteiga + brócolos salteados</li>
   <li>Frango assado com pele + couve-flor</li>
   <li>Hambúrguer caseiro (sem pão) + salada + bacon</li>
-  <li>Atum em azeite + ovo cozido + alface + tomate</li>
-</ul>`;
+  <li>Atum em azeite + ovos cozidos + alface</li>
+</ul>
+<em>Princípio:</em> proteína da palma da mão + gordura abundante + vegetais à vontade.`;
   }
   if (t.includes("jantar")) {
-    return `Sugestões de <strong>jantar</strong>:
+    return `Sugestões de <strong>jantar</strong> (ideal: até às 19-20h, deixar 3h antes de dormir):
 <ul>
   <li>Sardinhas grelhadas + salada de tomate</li>
   <li>Costeletas de borrego + courgette grelhada</li>
   <li>Bacalhau fresco + grelos salteados em alho</li>
   <li>Picanha + cogumelos em manteiga</li>
-  <li>Sopa de legumes + ovos cozidos</li>
-</ul>`;
+  <li>Ovos mexidos com queijo + abacate</li>
+</ul>
+<em>Sem snacks depois:</em> qualquer ingestão calórica reativa insulina e bloqueia reparação noturna.`;
   }
-  return `Quer um plano semanal completo? Use o <a href="#planeador">Planeador</a> — em 5 perguntas devolve menu de 7 dias adaptado ao seu objetivo.`;
+  if (t.includes("lanche") || t.includes("snack")) {
+    return `<strong>Lanches não fazem parte de uma alimentação ancestral.</strong> A ideia de "comer de 3 em 3 horas" é um mito da indústria alimentar dos anos 80 — não tem suporte científico para indivíduos saudáveis.<br><br>
+Cada vez que come (mesmo "saudável"), dispara insulina. Insulina cronicamente elevada = resistência à insulina = doenças metabólicas.<br><br>
+<em>Se tem fome entre refeições:</em> está a comer pouca gordura ou pouca proteína. Aumente nas refeições principais — vai sentir-se saciado durante 5-7h sem esforço.<br><br>
+<em>Se tem mesmo de "picar":</em> ovo cozido, azeitonas, queijo curado, frutos secos (mão pequena). Mas é melhor não.`;
+  }
+  return `Quer um plano semanal completo? Use o <a href="#planeador">Planeador</a> — em 5 perguntas devolve menu de 7 dias adaptado ao seu objetivo. Importante: o padrão recomendado é <strong>2 refeições/dia</strong>, sem lanches.`;
+}
+ 
+function answerFasting(text) {
+  const t = normalize(text);
+  if (/quantas refeicoes|quantas vezes|3 refeicoes|refeicoes por dia/.test(t)) {
+    return `<strong>O ideal são 1-2 refeições por dia. Máximo 3.</strong> Sem lanches.<br><br>
+A frequência alimentar é tão importante como o conteúdo. Cada refeição dispara insulina durante 3-5h. Comer 5-6x/dia mantém insulina cronicamente alta — exatamente o oposto do que queremos.<br><br>
+<em>Padrão recomendado:</em>
+<ul>
+  <li><strong>Janela 16:8</strong> — 2 refeições, jejum 16h (almoço + jantar)</li>
+  <li><strong>Janela 18:6 ou 20:4</strong> — para perda de peso ou patologia metabólica</li>
+  <li><strong>OMAD (1 refeição)</strong> — 1-2x/semana, terapêutico</li>
+</ul>
+A fome verdadeira aparece quando o corpo precisa, não de hora a hora.`;
+  }
+  if (/omad|uma refeicao|1 refeicao/.test(t)) {
+    return `<strong>OMAD (One Meal A Day)</strong> = uma única refeição diária, jejum de ~23h.<br><br>
+Não é para todos os dias — usado 1-3x/semana é uma ferramenta poderosa para:
+<ul>
+  <li>Quebrar plateaus de perda de peso</li>
+  <li>Reset metabólico em diabéticos T2</li>
+  <li>Maximizar autofagia (limpeza celular)</li>
+</ul>
+<em>Como fazer:</em> beba água, sal, café, chá durante o dia. Faça uma refeição grande e nutritiva (geralmente jantar) com proteína + gordura abundantes. Comece com 2x/semana e veja como se sente.`;
+  }
+  if (/saltar pequeno|salto o pequeno|saltar o pequeno/.test(t)) {
+    return `<strong>Sim, deve saltar o pequeno-almoço.</strong> É uma das mudanças mais simples e poderosas que pode fazer.<br><br>
+O mito do "pequeno-almoço é a refeição mais importante" foi popularizado por... fabricantes de cereais (Kellogg's nos anos 1940). A evidência atual mostra exatamente o oposto.<br><br>
+<em>Benefícios documentados:</em>
+<ul>
+  <li>Sensibilidade à insulina melhorada (Halberg et al., 2005)</li>
+  <li>Autofagia celular ativa (limpeza intracelular — Prémio Nobel 2016)</li>
+  <li>Redução de fome ao longo do dia (paradoxalmente)</li>
+  <li>Hormona de crescimento +1300% durante o jejum</li>
+</ul>
+<em>O que tomar enquanto jejua:</em> água com sal, café preto, chá. Permitido também café bulletproof (não há consenso, mas a maioria considera que mantém o estado metabólico do jejum).`;
+  }
+  return `<strong>Jejum intermitente</strong> é simplesmente comer dentro de uma janela de tempo restrita. Os protocolos mais comuns:
+<ul>
+  <li><strong>16:8</strong> (mais comum) — janela de 8h, jejum 16h</li>
+  <li><strong>18:6</strong> — janela 6h (1-2 refeições)</li>
+  <li><strong>20:4</strong> ou <strong>OMAD</strong> — protocolos terapêuticos</li>
+</ul>
+<em>Como começar:</em> salte o pequeno-almoço. Primeira refeição às 12-13h, última às 19-20h. É natural e quase ninguém tem fome de manhã quando está em cetose.<br><br>
+Quer saber sobre algo específico? Pergunte: <em>"posso fazer OMAD?"</em>, <em>"o que beber em jejum?"</em>, etc.`;
 }
  
 function answerGeneral(text) {
@@ -3111,6 +3196,7 @@ function answerGeneral(text) {
 function generateResponse(text) {
   const intent = detectIntent(text);
   switch (intent) {
+    case "fasting": return answerFasting(text);
     case "food": return answerFood(text);
     case "symptom": return answerSymptom(text) || answerGeneral(text);
     case "supplement": return answerSupplement(text);
@@ -3158,13 +3244,19 @@ function renderSuggestions(arr) {
 function generateContextSuggestions(lastResponse) {
   const r = lastResponse.toLowerCase();
   if (r.includes("patologia") || r.includes("dieta sugerida")) {
-    return ["Que comer ao pequeno-almoço?", "Tenho mais sintomas", "Como começar?"];
+    return ["Quantas refeições devo fazer?", "Tenho mais sintomas", "Que suplementos tomar?"];
   }
-  if (r.includes("alimento ideal") || r.includes("não recomendado")) {
-    return ["E sobremesa?", "Que beber?", "Mais sugestões"];
+  if (r.includes("alimento ideal") || r.includes("não recomendado") || r.includes("excelente") && r.includes("escolha")) {
+    return ["E para acompanhar?", "Posso comer outra coisa?", "Quantas refeições devo fazer?"];
+  }
+  if (r.includes("jejum") || r.includes("omad") || r.includes("16:8")) {
+    return ["O que beber em jejum?", "Como entrar em cetose?", "Posso treinar em jejum?"];
   }
   if (r.includes("cetose")) {
     return ["Como entrar em cetose?", "Quanto tempo demora?", "Sintomas da keto-flu"];
+  }
+  if (r.includes("pequeno-almoco") || r.includes("almoco") || r.includes("jantar")) {
+    return ["Quantas refeições/dia?", "E lanches?", "O que beber em jejum?"];
   }
   return defaultSuggestions.slice(0, 4);
 }
@@ -3219,7 +3311,6 @@ document.getElementById("chat-input").addEventListener("input", e => {
  
 </body>
 </html>
-
  
 
 
